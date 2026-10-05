@@ -1,6 +1,6 @@
-/* Vintage chart offline worker, version 2026-10-03-0293fb98. Opening the app with a signal fetches the latest page (waiting
+/* Vintage chart offline worker, version 2026-10-05-023fee07. Opening the app with a signal fetches the latest page (waiting
    at most 3 seconds); without one, the copy kept on the phone is shown. */
-const CACHE = "vintage-chart-2026-10-03-0293fb98";
+const CACHE = "vintage-chart-2026-10-05-023fee07";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
